@@ -126,7 +126,7 @@ h1 {
     pointer-events: none; /* Para que no interfiera con la interacción del usuario */
 }
 .cta-button-play {
-    background-color: rgba(98, 255, 0, 0.9);
+    background-color: rgba(98, 255, 0, 0);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -137,14 +137,28 @@ h1 {
     text-align: center;
     font-size: var(--cta-font-size);
     color: black;
-  box-shadow: 0 4px 15px rgb(17, 255, 104);
     transition: transform 0.3s ease-in-out;
     animation: pulse 2s infinite;
     margin-right: 30PX;
+    transition: ease-in 100ms;
+    color: #fff9fb;
+
+    border: solid 1px cornsilk;
+
+    
 }
 
 .cta-button-play:hover {
     transform: scale(1.1);
+    background-color: rgb(98, 255, 0);
+    transition: transform 0.3s ease-in-out;
+
+    box-shadow: 0 4px 15px rgb(17, 255, 104);
+    color: black;
+    border: none;
+
+    animation: pulse 2s infinite;
+
 }
 
 @keyframes pulse {
@@ -199,4 +213,23 @@ main {
 
 h2, h3 {
     margin-top: 0;
+}
+
+
+@media (max-width: 768px){
+    .featured-description {
+        font-size: 1.0rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #04ffd14a, #fff9fb);
+        -webkit-background-clip: text;
+        color: transparent;}
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: var(--gallery-gap);
+        }
+        h1{
+            font-size: 70px;
+        }
 }

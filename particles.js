@@ -1,14 +1,14 @@
 particlesJS('particles-js', {
     "particles": {
         "number": {
-            "value": 30, // Reduce el número de partículas
+            "value": 150, // Reduce el número de partículas
             "density": {
                 "enable": true,
                 "value_area": 1000 // Aumenta el área para dispersarlas más
             }
         },
         "color": {
-            "value": "#ffffff" // Color de las partículas
+            "value": "#2bff40" // Color de las partículas
         },
         "shape": {
             "type": "circle",
@@ -45,7 +45,7 @@ particlesJS('particles-js', {
         },
         "move": {
             "enable": true,
-            "speed": 0.5, // Reduce la velocidad de movimiento para suavizar el efecto
+            "speed": 1.2, // Reduce la velocidad de movimiento para suavizar el efecto
             "direction": "none",
             "random": true,
             "straight": false,
